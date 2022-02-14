@@ -7,13 +7,6 @@ ul li {
   list-style-type: none;
 }
 
-img .card-img {
-  width: 300px;
-  /* You can set the dimensions to whatever you want */
-  height: 400px;
-  object-fit: cover;
-}
-
 .text-color, .text-justify {
   color: black;
 }
