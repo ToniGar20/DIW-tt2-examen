@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+}
+
+$primary: #FFD144;
+$secondary: #008000FF;
+$tertiary: #E72246FF;
+$quaternary: #FFFFFFFF;
+$special: #1111E3FF;
+$base-black: black;
+
+$theme-colors: (
+        primary: $primary,
+        secondary: $secondary,
+        tertiary: $tertiary,
+        quaternary: $quaternary,
+        special: $special,
+        base-black: $base-black
+);
+
+// Not displaying styles at elements of a lists
+ul {
+  li {
+    list-style-type: none;
+  }
+}
+
+img {
+ .card-img {
+   width: 300px; /* You can set the dimensions to whatever you want */
+   height: 400px;
+   object-fit: cover;
+ }
+}
+
+// Editing grid columns to have margins
+$grid-columns:      13;
+
+// Customizing breakpoints (sm, md and xl)
+$grid-breakpoints: (
+        xs: 0,
+        sm: 500px,
+        md: 650px,
+        lg: 992px,
+        xl: 1050px,
+        xxl: 1400px
+);
+
+// Defined class to be extended
+.text-color {
+  color: $base-black;
+}
+
+/* Justify text with extend */
+.text-justify {
+  @extend .text-color;
+  text-align: justify;
+}
+
+//Including all Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
